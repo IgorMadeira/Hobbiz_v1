@@ -1,0 +1,90 @@
+.viewPort {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 75px;
+  margin-top: 30px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1px;
+  padding: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(252, 252, 252, 1) 0%,
+    rgba(253, 253, 253, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  flex: 0 0 350px;
+  max-height: 800px;
+  border: 1px solid rgb(220, 220, 220);
+  box-shadow: 1px 1px 1px rgb(220, 220, 220);
+}
+.sidebar-title {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1433px) {
+  .sidebar {
+    position: relative;
+    flex: 1 1 350px;
+    border-bottom: 1px rgb(220, 220, 220) solid;
+  }
+  .main-content {
+    flex: 1 1 auto;
+  }
+  .viewPort {
+    margin-top: 0px;
+  }
+}
+
+.main-content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 0 1 992px;
+  z-index: 1;
+}
+.main-content-promos {
+  background-color: white;
+  height: 100px;
+  border: 1px solid rgb(220, 220, 220);
+  margin: 15px 0px;
+}
+.main-post {
+  background-color: white;
+  margin-bottom: 15px;
+}
+.profile-picture {
+  border-radius: 50px;
+  border: 5px solid rgb(255, 166, 0);
+  margin-right: 30px;
+}
+
+.main-post-image {
+}
+
+.after-image-section {
+  border: 1px solid rgb(220, 220, 220);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 253, 253, 1) 90%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  padding: 15px;
+}
+.main-post-user {
+  border: 1px solid rgb(230, 230, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 253, 253, 1) 90%,
+    rgba(250, 250, 250, 1) 100%
+  );
+  padding: 15px;
+}

@@ -1,0 +1,15 @@
+.sideBar {
+  flex-basis: 25%;
+  min-width: 200px;
+  max-width: 250px;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  border-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .sideBar {
+    width: 100%;
+    max-width: unset;
+  }
+}

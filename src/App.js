@@ -1,15 +1,20 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import styles from "./App.module.css";
 import Header from "./Components/Header";
-import { Container, Button, Row, Col } from "react-bootstrap";
-import Viewport from "./Components/Viewport";
+import Content from "./Components/Content";
+import MainPage from "./Components/MainPage";
+import Sidebar from "./Components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Viewport />
-    </div>
+    <>
+      <MainPage>
+        <Header />
+        <div className={styles["viewport"]}>
+          <Sidebar />
+          <Content />
+        </div>
+      </MainPage>
+    </>
   );
 }
 

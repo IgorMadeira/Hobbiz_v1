@@ -1,11 +1,19 @@
-@import url("//fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: unset;
 }
-
-code {
-  font-family: "Josefin Sans", sans-serif, monospace;
+#root {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgb(235, 235, 235) 0%,
+    rgb(255, 255, 255) 100%
+  );
 }

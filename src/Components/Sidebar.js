@@ -1,16 +1,9 @@
+import styles from "./Sidebar.module.css";
+
 const Sidebar = (props) => {
   return (
-    <div className={props.className}>
-      <div className="sidebar-title">
-        <h3>SIDEBAR</h3>
-      </div>
-      <hr />
-      <p>Link</p>
-      <p>Link</p>
-      <p>Link</p>
-      <p>Link</p>
-      <p>Link</p>
-      <p>Link</p>
+    <div className={styles.sideBar}>
+      Sidebar
       <hr />
     </div>
   );

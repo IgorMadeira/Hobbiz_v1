@@ -1,0 +1,31 @@
+.feed-post {
+  align-self: center;
+  flex: 1;
+  background: #fcfcfc;
+  width: 100%;
+  min-height: 350px;
+  border-radius: 5px 50px 5px 50px;
+  box-shadow: 1px 1px 5px rgb(200, 200, 200);
+}
+
+.feed-post-profile-picture {
+  position: relative;
+  align-self: center;
+  top: 55px;
+}
+
+.feed-profile-picture-image {
+  border-radius: 50px;
+  border: 3px solid tomato;
+}
+
+.feed-post-user-stars {
+  position: absolute;
+  color: yellow;
+}
+
+@media (max-width: 750px) {
+  .feed-post {
+    width: 100%;
+  }
+}

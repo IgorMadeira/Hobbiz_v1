@@ -1,0 +1,7 @@
+.content {
+  display: flex;
+  flex-grow: 9999;
+  flex-direction: column;
+  margin: auto;
+  max-width: 750px;
+}

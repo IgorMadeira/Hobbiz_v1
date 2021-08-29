@@ -1,34 +1,28 @@
-import {Navbar, Container, Nav, NavDropdown, Button, InputGroup, FormControl, Row, Col} from 'react-bootstrap'
+import Button from "./UI/Button";
+import styles from "./Header.module.css";
+import { BiMenu } from "react-icons/bi";
 
 const Header = () => {
-    return ( 
-        <Navbar expand="lg" className="ml-auto header-container bg-light bg-gradient main-header">
-            <Container>
-                <Navbar.Brand href="#home">Hobbiz</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Início</Nav.Link>
-                        <Nav.Link href="#link">Explorar</Nav.Link>
-                        <Nav.Link href="#link">Quem somos</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-               
-                <Container> 
-                    <InputGroup type="search" className="nav-search-bar">
-                        <FormControl placeholder="Pesquisar..."/>
-                    </InputGroup>
-                </Container>
+  return (
+    <div className={styles["main-header"]}>
+      <div className={styles["main-logo"]}>
+        <h2>
+          <BiMenu className={styles["menu-stripes"]} /> HOBBIZ
+        </h2>
+      </div>
+      <nav className={styles["header-navbar"]}>
+        <ul className={styles["header-navbar-list"]}>
+          <ul>Início</ul>
+          <ul>Explorar</ul>
+          <ul>Quem somos</ul>
+        </ul>
+      </nav>
+      <div className={styles["header-buttons"]}>
+        <Button color="orange">ENTRAR</Button>
+        <Button color="blue">CADASTRAR</Button>
+      </div>
+    </div>
+  );
+};
 
-                <Container>
-                    <div className="nav-button-group">
-                        <Button variant="outline-secondary" className="nav-button">Entrar</Button>
-                        <Button variant="primary" className="nav-button">Cadastrar</Button>
-                    </div>
-                </Container>
-            </Container>
-        </Navbar>
-     );
-}
- 
 export default Header;

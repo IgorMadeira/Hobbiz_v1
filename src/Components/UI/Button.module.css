@@ -23,3 +23,6 @@
 .orange:hover {
   background: rgb(255, 105, 78);
 }
+.none {
+  all: unset;
+}

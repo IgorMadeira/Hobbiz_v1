@@ -2,7 +2,6 @@ import styles from "./FeedPost.module.css";
 import profilePicture from "../../Assets/profile.png";
 import profilePictureII from "../../Assets/profile_02.jpg";
 import { BsFillStarFill } from "react-icons/bs";
-import { Carousel } from "bootstrap";
 
 const FeedPost = (props) => {
   return (

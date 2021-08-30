@@ -2,12 +2,14 @@ import Button from "./UI/Button";
 import styles from "./Header.module.css";
 import { BiMenu } from "react-icons/bi";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className={styles["main-header"]}>
       <div className={styles["main-logo"]}>
         <h2>
-          <BiMenu className={styles["menu-stripes"]} /> HOBBIZ
+          <Button onClick={props.sidebarToggler} className="none">
+            <BiMenu className={styles["menu-stripes"]} /> HOBBIZ
+          </Button>
         </h2>
       </div>
       <nav className={styles["header-navbar"]}>

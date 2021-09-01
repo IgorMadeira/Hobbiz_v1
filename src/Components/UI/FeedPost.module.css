@@ -1,18 +1,27 @@
 .feed-post {
   background: #fdfdfd;
-  flex: 1;
   width: 100%;
-  box-sizing: border-box;
-  margin: auto;
+  margin-top: 25px;
   min-height: 350px;
   border-radius: 5px 30px 5px 30px;
   box-shadow: 1px 1px 5px rgb(200, 200, 200);
-}
 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "username userImage userRating"
+    "content content content"
+    "comments comments comments";
+  justify-items: center;
+}
+.feed-post-username {
+  justify-self: right;
+  margin: 15px;
+}
 .feed-post-profile-picture {
-  position: relative;
-  align-self: center;
-  top: 55px;
+  grid-area: "userImage";
+  margin-top: -50px;
 }
 
 .feed-profile-picture-image {
@@ -21,7 +30,11 @@
 }
 
 .feed-post-user-stars {
-  position: absolute;
+  justify-self: left;
+  margin: 15px;
+  grid-area: "userRating";
+  position: relative;
+  right: 0px;
   color: yellow;
 }
 

@@ -8,7 +8,7 @@ import Content from "./Components/Layout/Content";
 import Footer from "./Components/Layout/Footer";
 
 function App() {
-  const [showSidebar, setShowSidebar] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(false);
   const sidebarToggler = () => {
     setShowSidebar((prevState) => {
       setShowSidebar(!prevState);

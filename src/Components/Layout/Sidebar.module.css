@@ -1,9 +1,9 @@
 .sideBar {
+  position: fixed;
   background: white;
   height: 100%;
   min-width: 300px;
   box-shadow: 1px 1px 2px rgb(200, 200, 200);
-  position: absolute;
   padding: 50px;
   visibility: hidden;
   z-index: 3;

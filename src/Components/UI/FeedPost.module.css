@@ -1,8 +1,9 @@
 .feed-post {
-  align-self: center;
+  background: #fdfdfd;
   flex: 1;
-  background: #fcfcfc;
   width: 100%;
+  box-sizing: border-box;
+  margin: auto;
   min-height: 350px;
   border-radius: 5px 30px 5px 30px;
   box-shadow: 1px 1px 5px rgb(200, 200, 200);

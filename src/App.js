@@ -6,6 +6,7 @@ import Card from "./Components/UI/Card";
 import Viewport from "./Components/Layout/Viewport";
 import Content from "./Components/Layout/Content";
 import Footer from "./Components/Layout/Footer";
+import FeedPost from "./Components/UI/FeedPost";
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -21,6 +22,10 @@ function App() {
       <Sidebar isVisible={showSidebar} sidebarToggler={sidebarToggler} />
       <Viewport>
         <Content>
+          <Card />
+          <FeedPost />
+          <Card />
+          <Card />
           <Card />
         </Content>
       </Viewport>

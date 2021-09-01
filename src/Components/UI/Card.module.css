@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.content {
+  max-width: 750px;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  color: #1f538f;
+  box-shadow: 1px 1px 5px rgb(200, 200, 200);
+}

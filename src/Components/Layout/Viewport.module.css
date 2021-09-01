@@ -1,0 +1,12 @@
+.viewport {
+  display: flex;
+  margin-bottom: auto;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(230, 230, 230, 1),
+    rgba(230, 230, 230, 0)
+  );
+  background-size: 100% 13em;
+  background-repeat: no-repeat;
+}

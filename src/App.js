@@ -28,8 +28,8 @@ function App() {
           <Card />
           <Card />
         </Content>
+        <Footer />
       </Viewport>
-      <Footer />
     </>
   );
 }

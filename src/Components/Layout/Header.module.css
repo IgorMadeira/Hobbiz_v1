@@ -48,3 +48,27 @@
   padding: unset;
   margin: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .header-navbar {
+    visibility: collapse;
+  }
+  h2 {
+    margin: unset;
+  }
+  .header-navbar-list > ul {
+    margin: unset;
+  }
+  .main-logo {
+    padding: unset;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-buttons {
+    visibility: collapse;
+  }
+  .main-logo {
+    font-size: 16px;
+  }
+}

@@ -1,6 +1,8 @@
 import styles from "./Sidebar.module.css";
 import React from "react";
 import Backdrop from "../UI/Backdrop";
+import { FaWindowClose } from "react-icons/fa";
+import Button from "../UI/Button";
 
 const Sidebar = (props) => {
   const sidebarStyle = props.isVisible
@@ -12,7 +14,9 @@ const Sidebar = (props) => {
       <React.Fragment>
         <Backdrop onClick={props.sidebarToggler} />
         Sidebar
-        <button onClick={props.sidebarToggler}>Close</button>
+        <Button onClick={props.sidebarToggler} className="none">
+          <FaWindowClose />
+        </Button>
         <hr />
       </React.Fragment>
     );

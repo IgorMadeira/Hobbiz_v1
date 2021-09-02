@@ -7,25 +7,28 @@ import Viewport from "./Components/Layout/Viewport";
 import Content from "./Components/Layout/Content";
 import Footer from "./Components/Layout/Footer";
 import FeedPost from "./Components/UI/FeedPost";
+import RegisterForm from "./Components/Layout/Forms/RegisterForm";
+import useShowToggler from "./Components/Hooks/useShowToggler";
 
 function App() {
-  const [showSidebar, setShowSidebar] = useState(false);
-  const sidebarToggler = () => {
-    setShowSidebar((prevState) => {
-      setShowSidebar(!prevState);
-    });
-  };
+  const [showSidebar, sidebarToggler] = useShowToggler();
+  const [showRegisterForm, registerFormToggler] = useShowToggler();
 
   return (
     <>
-      <Header sidebarToggler={sidebarToggler} />
+      <Header
+        sidebarToggler={sidebarToggler}
+        registerFormToggler={registerFormToggler}
+      />
       <Sidebar isVisible={showSidebar} sidebarToggler={sidebarToggler} />
       <Viewport>
         <Content>
+          <RegisterForm
+            isVisible={showRegisterForm}
+            registerFormToggler={registerFormToggler}
+          />
           <Card />
           <FeedPost />
-          <Card />
-          <Card />
           <Card />
         </Content>
         <Footer />

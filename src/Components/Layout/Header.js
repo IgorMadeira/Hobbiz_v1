@@ -22,7 +22,9 @@ const Header = (props) => {
         </nav>
         <div className={styles["header-buttons"]}>
           <Button color="orange">ENTRAR</Button>
-          <Button color="blue">CADASTRAR</Button>
+          <Button color="blue" onClick={props.registerFormToggler}>
+            CADASTRAR
+          </Button>
         </div>
       </div>
     </div>

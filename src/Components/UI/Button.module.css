@@ -25,3 +25,7 @@
 .none {
   all: unset;
 }
+.none:hover {
+  filter: brightness(110%);
+  cursor: default;
+}

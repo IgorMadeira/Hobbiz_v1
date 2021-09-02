@@ -52,10 +52,15 @@
 @media screen and (max-width: 768px) {
   .header-navbar {
     visibility: collapse;
+    height: 0px;
   }
 }
 @media screen and (max-width: 480px) {
+  .header-content {
+    justify-content: left;
+  }
   .header-buttons {
     visibility: collapse;
+    height: 0px;
   }
 }

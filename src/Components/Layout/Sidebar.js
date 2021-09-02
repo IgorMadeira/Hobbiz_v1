@@ -3,6 +3,7 @@ import React from "react";
 import Backdrop from "../UI/Backdrop";
 import { FaWindowClose } from "react-icons/fa";
 import Button from "../UI/Button";
+import SearchInput from "../UI/SearchInput";
 
 const Sidebar = (props) => {
   const sidebarStyle = props.isVisible
@@ -13,11 +14,16 @@ const Sidebar = (props) => {
     return (
       <React.Fragment>
         <Backdrop onClick={props.sidebarToggler} />
-        Sidebar
-        <Button onClick={props.sidebarToggler} className="none">
+        <Button
+          onClick={props.sidebarToggler}
+          className="none"
+          style={{ marginLeft: "100%", fontSize: "2.0em", color: "crimson" }}
+        >
           <FaWindowClose />
         </Button>
+        Sidebar
         <hr />
+        <SearchInput />
       </React.Fragment>
     );
   };

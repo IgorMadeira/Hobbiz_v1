@@ -1,6 +1,5 @@
 import styles from "./FeedPost.module.css";
 import profilePicture from "../../Assets/profile.png";
-import profilePictureII from "../../Assets/profile_02.jpg";
 import { BsFillStarFill } from "react-icons/bs";
 
 const FeedPost = (props) => {
@@ -13,7 +12,7 @@ const FeedPost = (props) => {
           <img
             className={styles["feed-profile-picture-image"]}
             src={profilePicture}
-            alt="Profile picture"
+            alt=""
             width={100}
             height={100}
           />
